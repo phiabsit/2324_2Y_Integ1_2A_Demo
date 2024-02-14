@@ -19,6 +19,7 @@ namespace _2324_2Y_Integ1_2A_Demo
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow : Window
     {
         Button[] btnNums = new Button[10];
@@ -41,14 +42,17 @@ namespace _2324_2Y_Integ1_2A_Demo
             btnNums[8] = btn8;
             btnNums[9] = btn9;
 
-            for (int x = 0; x < btnNums.Length; x++)
-                btnNums[x].Content = x;
+            for (double x = 0; x < btnNums.Length; x++)
+                //btnNums[y].Content = x;
 
             btnAdd.Content = "+";
             btnMin.Content = "-";
             btnMult.Content = "x";
             btnDiv.Content = "/";
             btnEnter.Content = "=";
+
+            double Numx = (Math.Sqrt(0));
+            double Numy = (Math.Sqrt(0)); ;
         }
 
         private void numberEnter(int x)
@@ -179,5 +183,16 @@ namespace _2324_2Y_Integ1_2A_Demo
                 num2 = 0;
             }
         }
-    }
+        private void Modulo(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Sqrt(object sender, RoutedEventArgs e)
+        {
+             //= (Math.Sqrt(0)) ;
+
+        }
+    }   
+
 }
